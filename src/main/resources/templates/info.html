@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Info</title>
+    <link rel="stylesheet" th:href="@{./style.css}">
+</head>
+<body>
+    <h2 class="head">Информация</h2>
+    <TABLE>
+        <tr>
+            <th>№ п/п</th>
+            <th>Наименование параметра</th>
+            <th>Значение</th>
+        </tr>
+        <tr>
+            <td class="col1">1.</td>
+            <td class="col2">Текущая дата</td>
+            <td class="col3">[[${nowDate}]]</td>
+        </tr>
+        <tr>
+            <td class="col1">2.</td>
+            <td class="col2">Операционная система</td>
+            <td class="col3">[[${osName}]]</td>
+        </tr>
+        <tr>
+            <td class="col1">3.</td>
+            <td class="col2">Версия</td>
+            <td class="col3">[[${version}]]</td>
+        </tr>
+        <tr>
+            <td class="col1">4.</td>
+            <td class="col2">Архитектура</td>
+            <td class="col3">[[${arch}]]</td>
+        </tr>
+        <tr>
+            <td class="col1">5.</td>
+            <td class="col2">Текущий пользователь</td>
+            <td class="col3">[[${user}]]</td>
+        </tr>
+    </TABLE>
+</body>
+</html>
